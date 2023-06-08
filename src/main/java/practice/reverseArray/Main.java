@@ -1,10 +1,13 @@
 package practice.reverseArray;
 
-public class Main {
+import java.util.Arrays;
+import java.util.Scanner;
 
-    // используя данный метод, вы можете использовать ваши методы, и проверить их работу на разных
-    // значений для проверки и отладки
+public class Main {
     public static void main(String[] args) {
-        String line = "Каждый охотник желает знать, где сидит фазан";
+        System.out.println("Enter text:");
+        Scanner scanner = new Scanner(System.in);
+        String line = scanner.nextLine();
+        System.out.println(Arrays.toString(ReverseArray.reverse(line.split(" +"))));
     }
 }

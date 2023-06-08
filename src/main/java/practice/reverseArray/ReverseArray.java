@@ -3,21 +3,18 @@ package practice.reverseArray;
 
 public class ReverseArray {
 
-    public static String[] reverse(String[] strings) {
-        //TODO: Напишите код, который меняет порядок расположения элементов внутри массива на обратный.
+    public static String[] reverse(String[] array) {
         int start = 0;
-        String string = "";
-        for (int i = strings.length - 1; i >= 0; i--) {
+        for (int i = array.length - 1; i >= 0; i--) {
             if (start >= i) {
                 break;
             }
-            string = strings[start];
-            strings[start] = strings[i];
-            strings[i] = string;
+            String string = array[start];
+            array[start] = array[i];
+            array[i] = string;
             start++;
-
         }
-        return strings;
+        return array;
     }
 
 }

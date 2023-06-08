@@ -1,32 +1,27 @@
-# Работа с проектом в IntelliJ IDEA
+# CollectionsArray
 
-## Запуск тестов локально
+A project to practice working with arrays.
 
-Запуск на вашем компьютере перед отправкой в репозиторий
+____
 
-### Используя интерфейс
+### Hospital
 
-- Вызовите контекстное меню папки `test/java`
-правой клавишей мыши.
-- Выберите пункт `Run 'All Tests'`
+This class generates patient temperatures and calculates the number of healthy patients with a temperature between 36.2 and 36.9 degrees.
 
-![Запуск тестов](https://i.imgur.com/30te74l.png)
+![](src/main/resources/1.png)
 
-### Используя горячие клавиши
+____
 
-Запуск всех тестов `Ctrl+Shift+F10` / `⌃⇧R`
+### ReverseArray
 
-*Также вы можете запустить дебаг для анализа и поиска причины*
+This class reverses the order of elements and returns the same array.
 
-## Запуск проверки codestyle
+![](src/main/resources/2.png)
 
-- Запустите плагин checkstyle:
+____
 
-### Используя интерфейс
+### TwoDimensionalArray
 
-![Запуск проверки стиля кода](https://i.imgur.com/jxgn4In.png)
+This class that creates a two-dimensional array of a given size, on the diagonals of which there must be 'X' characters, in the remaining cells there is a space ' '.
 
-В результате получите отчет. Если ошибки будут найдены, посмотреть их список и описание
-сможете в разделе
-
-![](https://i.imgur.com/vyl2YnF.png)
+![](src/main/resources/3.png)

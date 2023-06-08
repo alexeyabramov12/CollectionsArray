@@ -53,9 +53,9 @@ class HospitalTest {
             IntStream.range(0, testHospitalData.length)
                 .mapToObj(i -> String.valueOf(testHospitalData[i])).toArray(String[]::new));
 
-        String expected = "Температуры пациентов: " + temperatures + System.lineSeparator() +
-                          "Средняя температура: 35.23" + System.lineSeparator() +
-                          "Количество здоровых: 5";
+        String expected = "Patient temperatures: " + temperatures + System.lineSeparator() +
+                          "Average temperature: 35.23" + System.lineSeparator() +
+                          "Number of healthy: 5";
 
         assertEquals(expected, Hospital.getReport(testHospitalData)
                 .replaceAll("\r\n", "\n")
